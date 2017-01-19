@@ -54,6 +54,7 @@ public class ColorAdapter extends RecyclerView.Adapter<ColorAdapter.ColorViewHol
             @Override
             public void onClick(View view) {
                 ValueAnimator anim;
+                final int ZOOM_CONST=5;
                 int verticalSize = (int) mContext.getResources().getDimension(R.dimen
                         .card_view_height);
 
@@ -62,8 +63,7 @@ public class ColorAdapter extends RecyclerView.Adapter<ColorAdapter.ColorViewHol
                     holder.mCardView.setCardBackgroundColor(arrayColors.getColor(position, ContextCompat.getColor(mContext, R.color.colorGrey)));
                     holder.mTextView.setTextColor(ContextCompat.getColor(mContext, R.color.colorGrey));
                     anim = ValueAnimator.ofInt(holder.mCardView.getMeasuredHeightAndState()
-                            , holder.mCardView.getMeasuredHeightAndState() * (int) mContext.getResources().getDimension(R.dimen
-                                    .card_view_height));
+                            , holder.mCardView.getMeasuredHeightAndState() * ZOOM_CONST);
 
                 } else {
                     holder.mCardView.setCardBackgroundColor(ContextCompat.getColor(mContext, R.color.colorGrey));
