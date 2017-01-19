@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PFSoftTest</string>
+    <string name="text_view_color_name">Color</string>
+
+    <string-array name="colors_name">
+        <item>RED</item>
+        <item>ORANGE</item>
+        <item>YELLOW</item>
+        <item>GREEN</item>
+        <item>BLUE</item>
+        <item>INDIGO</item>
+        <item>VIOLET</item>
+    </string-array>
+
+</resources>
